@@ -1,4 +1,15 @@
 {
   "name": "alarm",
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.1.1",
+  "dependencies": {
+    "ambient-lib": "^1.0.4",
+    "dotenv": "^10.0.0",
+    "forever": "^4.0.1",
+    "got": "^12.0.0",
+    "node-cron": "^3.0.0"
+  },
+  "scripts": {
+    "dev": "node index.mjs",
+    "start": "forever start index.mjs"
+  }
 }
